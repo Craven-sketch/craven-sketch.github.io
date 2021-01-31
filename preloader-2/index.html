@@ -1,0 +1,120 @@
+<html lang="en">
+
+<head>
+    <title>preloader.agriyaan</title>
+    <style>
+        .body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .parent {
+            margin-left: 25rem;
+            margin-top: 45rem;
+        }
+
+        .leaf {
+            width: 150px;
+            margin-left: 5px;
+            animation: roll 1s ease-in-out forwards infinite alternate 0.4s;
+        }
+
+        .stem {
+            width: 60px;
+            margin-left: 50px;
+        }
+
+        .buc3 {
+            width: 70px;
+            margin-left: 50px;
+            animation: left-to-right 1s ease-in-out forwards infinite alternate 0.4s;
+        }
+
+        .buc2 {
+            width: 50px;
+            margin-left: 60px;
+            animation: left-to-right 1s ease-in-out forwards infinite alternate 0.2s;
+        }
+
+        .buc1 {
+            width: 25px;
+            margin-left: 74px;
+            margin-top: 4px;
+            animation: left-to-right 1s ease-in-out forwards infinite alternate;
+        }
+
+        @keyframes left-to-right {
+            0% {
+                transform: translateX(0)
+            }
+
+            50% {
+                transform: translateX(30px)
+            }
+
+            75% {
+                transform: translateX(0)
+            }
+
+            100% {
+                transform: translateX(0)
+            }
+        }
+
+        @keyframes roll {
+            0% {
+                transform: rotate(0);
+            }
+
+            50% {
+                transform: rotate(3deg);
+            }
+
+            100% {
+                transform: rotate(0);
+            }
+        }
+
+        @media only screen and (min-width: 375px) {
+            .parent {
+                margin-left: 26rem;
+                margin-top: 45rem;
+            }
+        }
+
+        @media only screen and (min-width: 768px) {
+            .parent {
+                margin-left: 25rem;
+                margin-top: 30rem;
+            }
+        }
+
+        @media only screen and (min-width: 280px) {
+            .parent {
+                margin-left: 25rem;
+                margin-top: 60rem;
+            }
+        }
+
+        @media only screen and (min-width: 1261px) {
+            .parent {
+                margin-left: 35rem;
+                margin-top: 15rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="parent">
+        <img src="5.png" class="leaf"><br>
+        <img src="4.png" class="stem"><br>
+        <img src="3.png" class="buc3"><br>
+        <img src="2.png" class="buc2"><br>
+        <img src="1.png" class="buc1">
+    </div>
+
+</body>
+
+</html>
