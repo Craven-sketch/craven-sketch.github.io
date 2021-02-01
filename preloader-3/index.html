@@ -1,0 +1,122 @@
+<html>
+
+<head>
+    <title>preloader_3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .body{
+            margin: 0;
+            padding: 0;
+        }
+
+        .parent{
+            margin-top: 16rem;
+            margin-left: 5.5rem;
+        }
+
+        .child{
+            width: 100px;
+            height: 100px;
+            animation: roll 1s ease-in-out forwards infinite alternate;
+        }
+
+        @keyframes roll {
+            0% {
+                transform: rotate(0);
+            }
+            
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @media only screen and (min-width: 320px) {
+            .parent {
+                margin-left: 6.5rem;
+                margin-top: 13rem;
+
+            }
+
+        }
+
+        @media only screen and (min-width: 360px) {
+            .parent {
+                margin-left: 8rem;
+                margin-top: 16rem;
+
+            }
+
+        }
+
+        @media only screen and (min-width: 375px) {
+            .parent {
+                margin-left: 8.5rem;
+                margin-top: 17rem;
+
+            }
+
+        }
+
+        @media only screen and (min-width: 411px) {
+            .parent {
+                margin-left: 9.5rem;
+                margin-top: 19rem;
+
+            }
+
+        }
+
+        @media only screen and (min-width: 414px) {
+            .parent {
+                margin-left: 9.5rem;
+                margin-top: 18.5rem;
+
+            }
+
+        }
+
+        @media only screen and (min-width: 540px) {
+            .parent {
+                margin-left: 13.9rem;
+                margin-top: 18rem;
+
+            }
+
+        }
+
+        @media only screen and (min-width: 768px) {
+            .parent {
+                margin-left: 21rem;
+                margin-top: 27rem;
+
+            }
+
+        }
+
+        @media only screen and (min-width: 1024px) {
+            .parent {
+                margin-left: 29rem;
+                margin-top: 37rem;
+
+            }
+
+        }
+
+        @media only screen and (min-width: 1261px) {
+            .parent {
+                margin-left: 39rem;
+                margin-top: 16rem;
+
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <img src="1.png" class="child">
+    </div>
+</body>
+
+</html>
