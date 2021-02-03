@@ -26,7 +26,7 @@
             margin-right: 20px;
             position: absolute;
             top: 280;
-            animation: lefts 2s infinite ease-in-out 0.9s;
+            animation: lefts 2s infinite ease-in-out 0.2s;
         }
 
         .right {
@@ -35,7 +35,7 @@
             margin-left: 165px;
             position: absolute;
             top: 280;
-            animation: rights 2s infinite ease-in-out 0.3s;
+            animation: rights 2s infinite ease-in-out 0.2s;
         }
 
         .bottom {
@@ -66,19 +66,19 @@
 
         @keyframes rights {
             0% {
-                transform: translateX(0);
+                transform: rotate(0)
             }
 
             25% {
-                transform: translateX(20px);
+                transform: rotate(10deg);
             }
 
             50% {
-                transform: translateX(0);
+                transform: rotate(0);
             }
 
             100% {
-                transform: translateX(0);
+                transform: rotate(0);
             }
         }
 
@@ -102,19 +102,19 @@
 
         @keyframes lefts {
             0% {
-                transform: translateX(0);
+                transform: rotate(0);
             }
 
             25% {
-                transform: translateX(-20px);
+                transform: rotate(-10deg);
             }
 
             50% {
-                transform: translateX(0);
+                transform: rotate(0);
             }
 
             100% {
-                transform: translateX(0);
+                transform: rotate(0);
             }
         }
 
