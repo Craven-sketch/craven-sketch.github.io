@@ -13,7 +13,7 @@
             margin: 22rem 7rem;
             width: 150px;
             height: 150px;
-            animation: roll 1s ease-in-out infinite alternate;
+            animation: roll 2s ease-out infinite;
         }
 
         @keyframes roll {
@@ -21,8 +21,12 @@
                 transform: rotate(0);
             }
 
+            50%{
+                transform: rotate(180deg) scale(0.5);
+            }
+
             100% {
-                transform: rotate(140deg) scale(0.5);
+                transform: rotate(360deg);
             }
         }
 
